@@ -22,8 +22,19 @@ irm https://github.com/initzeromp/izgear-dist/releases/latest/download/install.p
 curl -fsSL https://github.com/initzeromp/izgear-dist/releases/latest/download/install.sh | sh
 ```
 
-La directory predefinita è `%USERPROFILE%\izgear` o `$HOME/izgear`; se ne indica
-un'altra con la variabile `IZG_HOME` o come argomento dello script.
+izGear si installa nella directory corrente, quella da cui si lancia il comando; se ne
+indica un'altra con la variabile `IZG_HOME` o come argomento dello script. Per
+installare in una directory nuova, la si crea e ci si entra prima:
+
+```powershell
+mkdir C:\izgear; cd C:\izgear
+irm https://github.com/initzeromp/izgear-dist/releases/latest/download/install.ps1 | iex
+```
+
+```sh
+mkdir ~/izgear && cd ~/izgear
+curl -fsSL https://github.com/initzeromp/izgear-dist/releases/latest/download/install.sh | sh
+```
 
 Chi preferisce leggere lo script prima di lanciarlo lo scarica, lo legge e lo esegue:
 
